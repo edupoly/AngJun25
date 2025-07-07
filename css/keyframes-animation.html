@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 {
+            width: 300px;
+            height: 200px;
+            /* animation: xyz 3s; */
+            animation: xyz 3s ease 0s infinite alternate forwards;
+        }
+
+        @keyframes xyz {
+            0% {
+                transform: scale(0.5);
+                background-color: lightcoral;
+            }
+
+            100% {
+                transform: scale(1) translate(100px, 100px);
+                background-color: lightcoral;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I will start the class at 7:30 please inform</h1>
+    <!-- <div id="d1"></div> -->
+</body>
+
+</html>

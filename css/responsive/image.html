@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        #mtable {
+            overflow-x: scroll;
+        }
+
+        #d3 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        #bannerimg {
+            width: 50%;
+            box-sizing: border-box;
+            /* aspect-ratio: 3/2; */
+        }
+
+        #bannertext {
+            width: 50%;
+            box-sizing: border-box;
+            font-size: 2em;
+            padding: 20px;
+        }
+
+        #headbar {
+            width: 100%;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #nav i {
+            font-size: 3em;
+            display: none;
+        }
+
+        @media screen and (max-width:700px) {
+            #d3 {
+                flex-direction: column-reverse;
+            }
+
+            #bannerimg {
+                width: 100%;
+            }
+
+            #bannertext {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            #headbar {
+                display: none;
+            }
+
+            #nav i {
+                display: block;
+            }
+        }
+
+        @media print {
+            #headbar {
+                display: none;
+            }
+
+            #bannertext {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <h1>Hello Deepu</h1>
+        <i class="bi bi-list"></i>
+    </div>
+    <div id="headbar"></div>
+    <div id="d3">
+        <div id="bannerimg">
+            <img width="100%"
+                src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202505/deepika-padukone-to-join-pariksha-pe-charcha-2025-to-address-student-well-being-113140139-16x9.jpg?VersionId=fN2mswpbFPfFcLw3sXnHmfPnBn30j6u7"
+                alt="">
+        </div>
+        <div id="bannertext">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit id vel,
+                consequatur eveniet ex
+                asperiores
+                nobis fuga commodi vero expedita quod? Libero, voluptas aliquam minus repudiandae pariatur eaque
+                mollitia
+                nemo.</p>
+        </div>
+    </div>
+    <div id="mtable">
+        <table border="1" style="width:100%; font-size:2em;border-collapse: collapse; margin-top: 30px;">
+            <thead>
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Section</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Father's Name</th>
+                    <th>Mother's Name</th>
+                    <th>DOB</th>
+                    <th>Blood Group</th>
+                    <th>Admission No</th>
+                    <th>Category</th>
+                    <th>Religion</th>
+                    <th>Nationality</th>
+                    <th>Guardian Contact</th>
+                    <th>Previous School</th>
+                    <th>Remarks</th>
+                    <th>Height</th>
+                    <th>Weight</th>
+                    <th>House</th>
+                    <th>Transport</th>
+                    <th>Bus Route</th>
+                    <th>Sibling Name</th>
+                    <th>Sibling Class</th>
+                    <th>Sibling Section</th>
+                    <th>Sibling Roll No</th>
+                    <th>Medical History</th>
+                    <th>Allergies</th>
+                    <th>Emergency Contact</th>
+                    <th>Photo</th>
+                    <th>Signature</th>
+                    <th>Admission Date</th>
+                    <th>Leaving Date</th>
+                    <th>TC Issued</th>
+                    <th>Hostel</th>
+                    <th>Hostel Room</th>
+                    <th>Sports</th>
+                    <th>Achievements</th>
+                    <th>Hobbies</th>
+                    <th>Languages Known</th>
+                    <th>Mother Tongue</th>
+                    <th>Local Address</th>
+                    <th>Permanent Address</th>
+                    <th>Bank Account</th>
+                    <th>IFSC</th>
+                    <th>Aadhaar</th>
+                    <th>Scholarship</th>
+                    <th>Fee Concession</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>15</td>
+                    <td>Male</td>
+                    <td>10</td>
+                    <td>A</td>
+                    <td>123 Main St</td>
+                    <td>1234567890</td>
+                    <td>john@example.com</td>
+                    <td>Robert Doe</td>
+                    <td>Jane Doe</td>
+                    <td>2009-01-01</td>
+                    <td>O+</td>
+                    <td>1001</td>
+                    <td>General</td>
+                    <td>Christian</td>
+                    <td>Indian</td>
+                    <td>1234567890</td>
+                    <td>ABC School</td>
+                    <td>Good</td>
+                    <td>160cm</td>
+                    <td>50kg</td>
+                    <td>Red</td>
+                    <td>Yes</td>
+                    <td>Route 1</td>
+                    <td>Jane Doe</td>
+                    <td>8</td>
+                    <td>B</td>
+                    <td>2</td>
+                    <td>None</td>
+                    <td>Peanuts</td>
+                    <td>9876543210</td>
+                    <td>photo1.jpg</td>
+                    <td>sign1.png</td>
+                    <td>2020-04-01</td>
+                    <td></td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                    <td>Football</td>
+                    <td>District Winner</td>
+                    <td>Reading</td>
+                    <td>English, Hindi</td>
+                    <td>English</td>
+                    <td>123 Main St</td>
+                    <td>123 Main St</td>
+                    <td>123456789012</td>
+                    <td>IFSC001</td>
+                    <td>123412341234</td>
+                    <td>No</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Priya Singh</td>
+                    <td>14</td>
+                    <td>Female</td>
+                    <td>9</td>
+                    <td>B</td>
+                    <td>456 Park Ave</td>
+                    <td>2345678901</td>
+                    <td>priya@example.com</td>
+                    <td>Raj Singh</td>
+                    <td>Sunita Singh</td>
+                    <td>2010-02-02</td>
+                    <td>A+</td>
+                    <td>1002</td>
+                    <td>OBC</td>
+                    <td>Hindu</td>
+                    <td>Indian</td>
+                    <td>2345678901</td>
+                    <td>XYZ School</td>
+                    <td>Excellent</td>
+                    <td>155cm</td>
+                    <td>48kg</td>
+                    <td>Blue</td>
+                    <td>No</td>
+                    <td></td>
+                    <td>Rahul Singh</td>
+                    <td>6</td>
+                    <td>A</td>
+                    <td>3</td>
+                    <td>Asthma</td>
+                    <td>None</td>
+                    <td>8765432109</td>
+                    <td>photo2.jpg</td>
+                    <td>sign2.png</td>
+                    <td>2021-06-15</td>
+                    <td></td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                    <td>Badminton</td>
+                    <td>State Runner-up</td>
+                    <td>Painting</td>
+                    <td>Hindi, English</td>
+                    <td>Hindi</td>
+                    <td>456 Park Ave</td>
+                    <td>456 Park Ave</td>
+                    <td>234567890123</td>
+                    <td>IFSC002</td>
+                    <td>234523452345</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ali Khan</td>
+                    <td>16</td>
+                    <td>Male</td>
+                    <td>11</td>
+                    <td>C</td>
+                    <td>789 Lake Rd</td>
+                    <td>3456789012</td>
+                    <td>ali@example.com</td>
+                    <td>Imran Khan</td>
+                    <td>Fatima Khan</td>
+                    <td>2008-03-03</td>
+                    <td>B+</td>
+                    <td>1003</td>
+                    <td>General</td>
+                    <td>Muslim</td>
+                    <td>Indian</td>
+                    <td>3456789012</td>
+                    <td>LMN School</td>
+                    <td>Average</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sneha Patel</td>
+                    <td>15</td>
+                    <td>Female</td>
+                    <td>10</td>
+                    <td>A</td>
+                    <td>321 Hill St</td>
+                    <td>4567890123</td>
+                    <td>sneha@example.com</td>
+                    <td>Ramesh Patel</td>
+                    <td>Meena Patel</td>
+                    <td>2009-04-04</td>
+                    <td>AB+</td>
+                    <td>1004</td>
+                    <td>SC</td>
+                    <td>Hindu</td>
+                    <td>Indian</td>
+                    <td>4567890123</td>
+                    <td>PQR School</td>
+                    <td>Good</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Arjun Mehra</td>
+                    <td>17</td>
+                    <td>Male</td>
+                    <td>12</td>
+                    <td>D</td>
+                    <td>654 River Ln</td>
+                    <td>5678901234</td>
+                    <td>arjun@example.com</td>
+                    <td>Vikram Mehra</td>
+                    <td>Shalini Mehra</td>
+                    <td>2007-05-05</td>
+                    <td>O-</td>
+                    <td>1005</td>
+                    <td>ST</td>
+                    <td>Sikh</td>
+                    <td>Indian</td>
+                    <td>5678901234</td>
+                    <td>STU School</td>
+                    <td>Excellent</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

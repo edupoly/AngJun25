@@ -1,0 +1,336 @@
+<html>
+
+<head>
+    <style>
+        /* selectors */
+        /* element selector */
+        /* h1 {
+            color: rgb(246, 178, 60);
+        } */
+        /* class selector */
+        /* .abc {
+            color: lightcoral;
+        }
+
+        #logo {
+            color: blueviolet;
+        } */
+        /* decendent selectors
+        ul li {
+            color: red;
+        } */
+        /* child selector */
+        /* ul>li {
+            color: red;
+        } */
+        /* sibling selector */
+        /* #d1~h1 {
+            color: red;
+        } */
+        /* immediate sibling selector */
+        /* #d1+h1 {
+            color: red;
+        } */
+        /* input[type="password"] {
+            border: 2px solid red;
+        } */
+
+
+        /* tr:nth-child(8) {
+            background-color: lightgreen;
+        }
+         */
+
+        /* tr:nth-child(3n) {
+            background-color: rgb(221, 250, 221);
+        }
+
+        tr:nth-child(3n+1) {
+            background-color: rgb(99, 246, 99);
+        }
+
+        tr:nth-child(3n+2) {
+            background-color: rgb(177, 243, 177);
+        } */
+        /* h1:hover {
+            color: lightblue
+        } */
+        /* p::first-letter {
+            font-size: 4em;
+        }
+
+        p::first-line {
+            text-decoration: underline;
+        } */
+        /* #dd {
+            width: 200px;
+            border: 1px solid;
+        } */
+        /* 
+            box
+                border
+                margin
+                padding
+                width
+                height
+         */
+        #d2 {
+            border: 2px solid black;
+            padding: 30px;
+            margin: 30px;
+        }
+
+        #d3 {
+            border-width: 10px;
+            border-color: red;
+            border-style: solid;
+            /* border-left: 10px solid green;
+            border-top: 10px solid green; */
+            padding: 30px 5px 10px;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d2">
+        Nagendra
+    </div>
+    <div id="d3">
+        Sriram Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, at incidunt numquam excepturi
+        impedit qui
+        possimus m
+    </div>
+    <!-- <i>India</i>
+    <b>Hydebarabad</b>
+    <h1 id="dd">Germany</h1>
+    <b>Berlin</b> -->
+    <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, at incidunt numquam excepturi impedit qui
+        possimus modi eaque iste dolor voluptates inventore ad cumque porro provident sint repellat. Tempore,
+        perspiciatis!
+    </p>
+    <h1>Edupoly</h1> -->
+    <!-- <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Subject 1</th>
+            <th>Subject 2</th>
+            <th>Subject 3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Student 1</td>
+            <td>85</td>
+            <td>78</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Student 2</td>
+            <td>74</td>
+            <td>88</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Student 3</td>
+            <td>67</td>
+            <td>80</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Student 4</td>
+            <td>90</td>
+            <td>91</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Student 5</td>
+            <td>76</td>
+            <td>85</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Student 6</td>
+            <td>82</td>
+            <td>79</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Student 7</td>
+            <td>91</td>
+            <td>84</td>
+            <td>77</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Student 8</td>
+            <td>69</td>
+            <td>73</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Student 9</td>
+            <td>88</td>
+            <td>90</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Student 10</td>
+            <td>77</td>
+            <td>82</td>
+            <td>79</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Student 11</td>
+            <td>84</td>
+            <td>76</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Student 12</td>
+            <td>73</td>
+            <td>88</td>
+            <td>86</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Student 13</td>
+            <td>80</td>
+            <td>85</td>
+            <td>78</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Student 14</td>
+            <td>92</td>
+            <td>89</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Student 15</td>
+            <td>75</td>
+            <td>81</td>
+            <td>83</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Student 16</td>
+            <td>86</td>
+            <td>77</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Student 17</td>
+            <td>79</td>
+            <td>84</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Student 18</td>
+            <td>83</td>
+            <td>90</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Student 19</td>
+            <td>78</td>
+            <td>82</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Student 20</td>
+            <td>85</td>
+            <td>88</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Student 21</td>
+            <td>81</td>
+            <td>79</td>
+            <td>84</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Student 22</td>
+            <td>90</td>
+            <td>87</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Student 23</td>
+            <td>76</td>
+            <td>83</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Student 24</td>
+            <td>88</td>
+            <td>85</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Student 25</td>
+            <td>84</td>
+            <td>80</td>
+            <td>86</td>
+        </tr>
+    </table> -->
+
+
+    <!-- <input type="text">
+    <br>
+    <input type="password"> -->
+    <!-- <h1 id="d1">Edupoly</h1>
+    <h2>Kiran</h2>
+    <h1>Nagendra</h1>
+    <h1>Chaitanya</h1>
+    <h2>Samanta</h2> -->
+    <!-- <ul>
+        <h1>
+            Friend Countries
+            <li>France</li>
+        </h1>
+        <li>India</li>
+        <li>Sweden</li>
+        <li>Germany</li>
+        <li>Russia</li>
+    </ul>
+    <ol>
+        <li>Idly</li>
+        <li>Dosa</li>
+        <li>Biryani</li>
+        <li>Burji</li>
+    </ol> -->
+    <!-- <h1 id="logo">Edupoly</h1>
+    <h1 class="abc">Sriram</h1>
+    <h1>Kiran</h1>
+    <h1 class="abc">Thirumala</h1>
+    <h1 class="abc">Srija</h1> -->
+</body>
+
+</html>
+<!-- 
+    2 categories of elements
+    1. inline elements
+    2. block elements
+-->
