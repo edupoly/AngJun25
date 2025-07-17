@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // console.log(true && true);
+        // console.log(false && true);
+
+        // console.log(true || false);
+
+        // console.log(7 && 4);
+
+
+        // console.log(true && 0 && true && true && true && true && true && true);
+
+        var x = null || 100 || true || undefined || "ravi";
+        console.log(x);
+    </script>
+</body>
+
+</html>
+<!-- 
+    facts of js
+    1. 0,false,null,undefined,NaN,"" are considered as falsy
+    2. non falsy are truthy
+    3. if any logical operatation is having only && then expression stops executing
+    once the falsy value found and it returns the value
+-->
+<!-- 
+    AND  OR
+    &&   ||
+
+    T && T = T
+    F && F = F
+    T && F = F
+    F && T = F
+
+    T || T = T
+    F || F = F
+    T || F = T
+    F || T = T
+-->
