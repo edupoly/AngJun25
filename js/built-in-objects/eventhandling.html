@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onclick="abc(event)">Edupoly</h1>
+    <!-- <input type="text" onblur="xyz(event)" id="d1"> -->
+    <form onsubmit="xyz(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+    <script>
+
+        function xyz(ev) {
+            ev.preventDefault();
+            console.log(document.getElementById("name").value);
+            console.log(document.getElementById("email").value);
+            console.log(document.getElementById("password").value);
+            console.log(document.getElementById("age").value);
+        }
+    </script>
+</body>
+
+</html>
+<!-- 
+    event handlers(listener)
+        click ===> onclick
+        hover===>onhover
+        focus=>onfocus
+        blur =>onblur
+        change=>onchange
+-->

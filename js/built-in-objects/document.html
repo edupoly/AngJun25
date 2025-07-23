@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HTML Elements Demo</h1>
+
+    <p>This is a <strong>sample paragraph</strong> with <em>emphasized text</em> and <u>underlined text</u>.</p>
+
+    <ul>
+        <li>Unordered list item 1</li>
+        <li>Unordered list item 2</li>
+        <li>Unordered list item 3</li>
+    </ul>
+
+    <ol>
+        <li>Ordered list item 1</li>
+        <li>Ordered list item 2</li>
+        <li>Ordered list item 3</li>
+    </ol>
+
+    <table border="1">
+        <caption>Sample Table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>28</td>
+                <td>Engineer</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>34</td>
+                <td>Designer</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="uname" name="name" value="Srija"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <h1 id="d1">Hello Edupoly</h1>
+    <h1 id="d2">Hello Praveen</h1>
+
+    <script>
+
+        var x = document.createElement("h1");
+        x.innerText = "Welcome to DOM"
+        console.log(x);
+        document.body.appendChild(x)
+        // var c = document.getElementById("uname")
+        // console.log(c.value);
+
+        // var y = document.getElementsByTagName("h1")
+        // for (var i = 0; i <= y.length - 1; i++) {
+        //     console.log(y[i].innerText);
+        // }
+
+        // var p = document.querySelectorAll("h1")
+        // p.forEach(function (el) {
+        //     el.style.color = "red"
+        // })
+
+
+    </script>
+</body>
+
+</html>

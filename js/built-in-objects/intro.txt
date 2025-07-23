@@ -1,0 +1,26 @@
+
+document
+    selection of elements
+        getElementById
+        getElementsByTagName
+        querySelectorAll
+    modify elements
+    creating element
+<!-- 
+    Object {
+        key:value,
+        key:value,
+        key:value,
+        methods
+    }
+-->
+<!-- 
+    window
+        document
+        XMLHttpRequest
+        Promise
+        Date
+        RegEx
+        Number
+        String
+-->
