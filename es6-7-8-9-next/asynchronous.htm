@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.2/rxjs.umd.min.js"
+        integrity="sha512-9rY+ul/tDd5uFmYIG3Wf6sTYh44qwK7ZUcAejPR1RzZ4I09ubJBeOoMvLtIUjXWN5ZfR8WgZx9gwnZhMQ0ve9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        // setTimeout(function(){},2000)
+        $.get("https://fakestoreapi.com/products", function (a, b) {
+            console.log(a);
+            console.log(b);
+        })
+        console.log("Hello");
+
+        fetch("https://fakestoreapi.com/products").then(function (res) {
+            console.log(res);
+        })
+        console.dir(rxjs);
+
+        rxjs.ajax.ajax("https://fakestoreapi.com/products").subscribe(function (res) {
+            console.log(res);
+        })
+
+        var http = new XMLHttpRequest();
+        http.open("get", "https://fakestoreapi.com/products")
+        http.send();
+        // console.dir(http);
+        http.onloadend = function () {
+            console.log(http.responseText);
+        }
+    </script>
+</body>
+
+</html>

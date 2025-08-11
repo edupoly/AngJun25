@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Employee {
+            firstname;
+            lastname;
+            dob;
+            hra;
+            da;
+            ta;
+            basicPay;
+            pt;
+            it;
+            getFullName() {
+
+            }
+            getAge() {
+                var ct = Date.now();
+                var bt = new Date(this.dob)
+                console.log((ct - bt.getTime()) / (1000 * 60 * 60 * 24 * 365));
+            }
+            getNetSalary() {
+
+            }
+            getTakehome() {
+
+            }
+        }
+
+        var newEmp = new Employee();
+        newEmp.firstname = "Praveen"
+        newEmp.lastname = "Gubbala";
+        newEmp.dob = "04/19/1983";
+
+        var newEmp2 = new Employee();
+        newEmp2.dob = '11/05/1983';
+
+        newEmp.getAge();
+        newEmp2.getAge();
+
+    </script>
+</body>
+
+</html>
+<!-- 
+    Encapsulation
+        data members
+        member functions
+    Abstraction
+    Polymorphism
+    Inheritance
+-->
